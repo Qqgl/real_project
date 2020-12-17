@@ -4,16 +4,19 @@ import com.alibaba.fastjson.JSONObject;
 import com.imgs.pretty.common.Result;
 import com.imgs.pretty.entity.Image;
 import com.imgs.pretty.repository.ImgRepository;
+import com.imgs.pretty.utils.CommonUtil;
 import com.imgs.pretty.utils.TimeUtil;
 import org.bson.types.Binary;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
+import java.util.Optional;
 
 
 @Service
@@ -51,12 +54,16 @@ public class ImgsService {
             Image img = imgRepository.save(image);
 
             response.put("id",img.getId());
+            response.put("url","http://localhost:8001/img/preShowOrDownloadImg?id="+image.getId());
         }catch (Exception e){
-
+            e.printStackTrace();
         }
-
-
-
         return Result.returnOK(response);
+    }
+
+    public String preShowOrDownloadImg(String id){
+        Optional<Image> optional = imgRepository.findById(id);
+
+        return Result.returnOK(optional.get());
     }
 }
