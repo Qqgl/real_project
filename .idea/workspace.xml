@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="aa5e9f1f-e9b8-4d7d-b29e-3be0f60048e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imgs/pretty/controller/ImgsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imgs/pretty/controller/ImgsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imgs/pretty/service/ImgsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imgs/pretty/service/ImgsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imgs/pretty/repository/ImgRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imgs/pretty/repository/ImgRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/imgs/pretty/service/ImgsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/imgs/pretty/service/ImgsServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/imgs/pretty/controller/ImgsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imgs/pretty/controller/ImgsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imgs/pretty/repository/ImgRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imgs/pretty/repository/ImgRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/imgs/pretty/service/ImgsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imgs/pretty/service/ImgsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imgs/pretty/utils/TimeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imgs/pretty/utils/TimeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/imgs/pretty/service/ImgsServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/imgs/pretty/service/ImgsServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,29 +65,19 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServerBoot">
-    <configuration name="CommonUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.imgs.pretty.utils.CommonUtil" />
+  <component name="RunManager" selected="JUnit.ImgsServiceTest.findByIds">
+    <configuration name="ImgsServiceTest.findByIds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pretty_imgs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.imgs.pretty.utils.*" />
+          <option name="PATTERN" value="com.imgs.pretty.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.imgs.pretty.utils.TimeUtil" />
-      <module name="pretty_imgs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imgs.pretty.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="com.imgs.pretty.service" />
+      <option name="MAIN_CLASS_NAME" value="com.imgs.pretty.service.ImgsServiceTest" />
+      <option name="METHOD_NAME" value="findByIds" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,6 +114,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ImgsServiceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pretty_imgs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imgs.pretty.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.imgs.pretty.service" />
+      <option name="MAIN_CLASS_NAME" value="com.imgs.pretty.service.ImgsServiceTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServerBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="pretty_imgs" />
       <extension name="coverage">
@@ -139,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServerBoot" />
-        <item itemvalue="Application.CommonUtil" />
-        <item itemvalue="JUnit.ImgsServiceTest.findOne" />
+        <item itemvalue="JUnit.ImgsServiceTest.findByIds" />
         <item itemvalue="JUnit.ImgsServiceTest.save" />
-        <item itemvalue="Application.TimeUtil" />
+        <item itemvalue="JUnit.ImgsServiceTest.test" />
+        <item itemvalue="JUnit.ImgsServiceTest.findOne" />
+        <item itemvalue="Spring Boot.ServerBoot" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +166,9 @@
       <workItem from="1608088927340" duration="2808000" />
       <workItem from="1608091788825" duration="14255000" />
       <workItem from="1608183526939" duration="1006000" />
-      <workItem from="1608185385771" duration="5305000" />
+      <workItem from="1608185385771" duration="5920000" />
+      <workItem from="1608275945966" duration="4206000" />
+      <workItem from="1609759396279" duration="863000" />
     </task>
     <servers />
   </component>
@@ -180,62 +188,62 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608091627683" />
-    <state width="1323" height="323" key="GridCell.Tab.0.bottom" timestamp="1608190295084">
+    <state width="1323" height="251" key="GridCell.Tab.0.bottom" timestamp="1608351875551">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.0.center" timestamp="1608190295084">
+    <state width="1323" height="251" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608351875551" />
+    <state width="1323" height="251" key="GridCell.Tab.0.center" timestamp="1608351875551">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.0.left" timestamp="1608190295084">
+    <state width="1323" height="251" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608351875551" />
+    <state width="1323" height="251" key="GridCell.Tab.0.left" timestamp="1608351875551">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.0.right" timestamp="1608190295084">
+    <state width="1323" height="251" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608351875551" />
+    <state width="1323" height="251" key="GridCell.Tab.0.right" timestamp="1608351875551">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.1.bottom" timestamp="1608190295084">
+    <state width="1323" height="251" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608351875551" />
+    <state width="1323" height="251" key="GridCell.Tab.1.bottom" timestamp="1608351875551">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.1.center" timestamp="1608190295084">
+    <state width="1323" height="251" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608351875551" />
+    <state width="1323" height="251" key="GridCell.Tab.1.center" timestamp="1608351875551">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.1.left" timestamp="1608190295084">
+    <state width="1323" height="251" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1608351875551" />
+    <state width="1323" height="251" key="GridCell.Tab.1.left" timestamp="1608351875551">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.1.right" timestamp="1608190295084">
+    <state width="1323" height="251" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1608351875551" />
+    <state width="1323" height="251" key="GridCell.Tab.1.right" timestamp="1608351875551">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.2.bottom" timestamp="1608190295084">
+    <state width="1323" height="251" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1608351875551" />
+    <state width="1323" height="323" key="GridCell.Tab.2.bottom" timestamp="1608193171939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.2.center" timestamp="1608190295084">
+    <state width="1323" height="323" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608193171939" />
+    <state width="1323" height="323" key="GridCell.Tab.2.center" timestamp="1608193171939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.2.left" timestamp="1608190295084">
+    <state width="1323" height="323" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1608193171939" />
+    <state width="1323" height="323" key="GridCell.Tab.2.left" timestamp="1608193171939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
-    <state width="1323" height="323" key="GridCell.Tab.2.right" timestamp="1608190295084">
+    <state width="1323" height="323" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1608193171939" />
+    <state width="1323" height="323" key="GridCell.Tab.2.right" timestamp="1608193171939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1608190295084" />
+    <state width="1323" height="323" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1608193171939" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1608115696836">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608115696836" />
-    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1608185395405">
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1609759436712">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1608185395405" />
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1609759436712" />
     <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1608185626674">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
